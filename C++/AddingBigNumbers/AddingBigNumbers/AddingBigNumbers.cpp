@@ -43,8 +43,6 @@ std::string add(const std::string& a, const std::string& b) {
         }
         else
         {
-            //std::cout << "numbers2.size(): " << numbers2.size() << '\n';
-
             for (int i = numbers2.size()-1; i >= 0; --i)
             {
                 if (numbers2[i] > 10) { numbers2[i - 1]++; numbers2[i] -= 10; }
