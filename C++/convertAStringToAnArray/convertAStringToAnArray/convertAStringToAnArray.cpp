@@ -12,7 +12,6 @@ Examples (Input ==> Output):
 
 std::vector<std::string> string_to_array(const std::string& s) {
     if (s.empty())return { "" };
-
     std::vector<std::string> vec;
     std::string tmp = "";
     for (char c : s) {
