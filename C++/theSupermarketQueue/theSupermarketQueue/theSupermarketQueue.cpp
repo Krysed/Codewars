@@ -34,10 +34,13 @@ P.S. The situation in this kata can be likened to the more-computer-science-rela
 #include <vector>
 
 long queueTime(std::vector<int> customers, int n) {
-
-    return n;
+    std::vector<long> checkoutTills(n, 0);
+    for (auto customer : customers) {
+        auto it = std::min_element(checkoutTills.begin(), checkoutTills.end());
+        *it += customer;
+    }
+    return *std::max_element(checkoutTills.begin(), checkoutTills.end());
 }
-
 bool equal(long a, long b) {
     return a == b;
 }
