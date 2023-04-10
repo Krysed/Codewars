@@ -14,7 +14,6 @@ std::string replaceAll(std::string str) {
         if (str[i] == '#')break;
         tmp += str[i];
     }
-    std::cout << tmp;
     return tmp;
 }
 
