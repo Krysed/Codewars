@@ -16,7 +16,6 @@ std::vector<int> evenNumbers(std::vector<int> arr, int n) {
     std::vector<int> tmp;
     std::for_each(begin(arr), end(arr), [&tmp](int a) { if(a % 2 == 0) tmp.push_back(a); });
     while (tmp.size() > n)tmp.erase(begin(tmp));
-    for (auto i : tmp)std::cout << i << " ";
     return tmp;
 }
 
