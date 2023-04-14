@@ -16,7 +16,7 @@ int maxSequence(const std::vector<int>& arr) {
     int maxEndingHere = 0;
     for (int i = 0; i < arr.size(); i++) {
         maxEndingHere += arr[i];
-        if (maxEndingHere < 0) {
+        if (maxEndingHere < 0) { 
             maxEndingHere = 0;
         }
         if (maxEndingHere > maxSoFar) {
