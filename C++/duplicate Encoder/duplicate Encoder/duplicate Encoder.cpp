@@ -23,7 +23,6 @@ std::string duplicate_encoder(const std::string& word) {
         if (characters[tolower(c)] > 1) encoded += ')';
         else encoded += '(';
     }
-    std::cout << encoded << " ";
     return encoded;
 }
 
