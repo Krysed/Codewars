@@ -36,12 +36,7 @@ public:
         for (int i = 0; i < tmp.length(); ++i) {
             sum += std::pow(tmp[i] - '0', p + i);
         }
-        if (sum % n == 0) {
-            return sum / n;
-        }
-        else {
-            return -1;
-        }
+        return sum % n == 0 ? sum / n : -1;
     }
 };
 
