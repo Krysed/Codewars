@@ -33,12 +33,8 @@ int main()
     std::cout << std::boolalpha;
 
     std::cout << (how_much_i_love_you(7) == "I love you") << "\n";
-    std::cout << (how_much_i_love_you(7)) << "\n";
     std::cout << (how_much_i_love_you(3) == "a lot") << "\n";
-    std::cout << (how_much_i_love_you(3)) << "\n";
     std::cout << (how_much_i_love_you(6) == "not at all") << "\n";
-    std::cout << (how_much_i_love_you(6)) << "\n";
-    std::cout << (how_much_i_love_you(8)) << "\n";
 
     return 0;
 }
