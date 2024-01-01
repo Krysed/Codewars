@@ -26,7 +26,7 @@ int solve(std::vector<std::string> v) {
         int num = std::stoi(i);
         num % 2 == 0 ? evenCount++ : oddCount++;
     }
-    return std::abs(evenCount - oddCount);
+    return evenCount - oddCount;
 }
 
 int main()
