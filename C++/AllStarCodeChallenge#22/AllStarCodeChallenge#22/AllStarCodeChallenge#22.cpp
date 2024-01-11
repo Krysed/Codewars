@@ -21,9 +21,6 @@ For example:
 #include <string>
 
 std::string to_time(unsigned seconds) {
-    unsigned hours, minutes;
-    hours = seconds%3600;
-    minutes = seconds % 60;
     return std::to_string(seconds / 3600) + " hour(s) and " + std::to_string((seconds / 60)%60) + " minute(s)";
 }
 
